@@ -249,7 +249,7 @@ ul, ol, li {
 	display: block;
 	position: relative;
 	text-align: center;
-  border: 1px solid lightslategray;
+  border: 10px solid lightslategray;
   
 	  
   }
@@ -262,6 +262,7 @@ ul, ol, li {
   
   .slide figure img {
 	max-height: 480px;
+	border: 5px solid rgba(54, 64, 88, 0.38);
   }
   
   .slider-arrow {
@@ -283,8 +284,8 @@ ul, ol, li {
 	background: #ddd;
 	color: #aaa;
   }
-  .slider-arrow--right { bottom: 50%; right: 30px; }
-  .slider-arrow--left { bottom: 50%; left: 30px; }
+  .slider-arrow--right { bottom: 50%; right: 249px;color: lightslategray;}
+  .slider-arrow--left { bottom: 50%; left: 249px; color: lightslategray;}
   
   
   .slider-nav {
