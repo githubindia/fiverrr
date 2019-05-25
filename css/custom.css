@@ -1,0 +1,130 @@
+.ac-label {
+  font-weight: 500;
+  position: relative;
+  padding: 0.5em 1em;
+  margin-bottom: 0.05em;
+  display: block;
+  cursor: pointer;
+  padding: 20px 20px;
+  font-size: 22px;
+  color: #fff;
+  background-color: lightslategray;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.ac-input:checked + label,
+.ac-label:hover {
+  background-color: #566573;
+}
+
+.ac-label:after,
+.ac-input:checked + .ac-label:after {
+  content: "+";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 4em;
+  height: 100%;
+  line-height: 3.25em;
+  text-align: center;
+  background-color: lightslategray;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.ac-label:hover:after,
+.ac-input:checked + .ac-label:after {
+  background-color: #566573;
+}
+
+.ac-input:checked + .ac-label:after {
+  content: "-";
+}
+
+.ac-input {
+  display: none;
+}
+
+.ac-text,
+.ac-sub-text {
+  opacity: 0;
+  height: 0;
+  margin-bottom: 0.5em;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.ac-input:checked ~ .ac-text,
+.ac-sub .ac-input:checked ~ .ac-sub-text {
+  opacity: 1;
+  height: auto;
+  max-width: 100%;
+}
+
+.ac-sub .ac-label {
+  background: none;
+  font-weight: 600;
+  padding: 0.5em 2em;
+  margin-bottom: 0;
+}
+
+.ac-sub .ac-label:checked {
+  background: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.ac-sub .ac-label:after,
+.ac-sub .ac-input:checked + .ac-label:after {
+  left: 0;
+  background: none;
+}
+
+.ac-sub .ac-input:checked + label,
+.ac-sub .ac-label:hover {
+  background: none;
+}
+
+.ac-sub-text {
+  padding: 0 1em 0 2em;
+}
+
+
+
+
+/* ROund Images */
+
+.circle-1 {
+    width:240px;
+    height:240px;
+    border-radius: 50%;
+    border:20px solid #baacc6;
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
+    /* float:left; */
+  }
+  
+  .circle-1 img {
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+  }
+  .circle-1:hover img {
+   transform: scale(1.1);
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1);
+    box-shadow: 2px 2px 2px #4b4b4b;
+    
+  }
+
+  #round{
+    margin: 20px 0px 20px 0px;
+      text-align: center;
+      width: 100%;
+      clear: both;
+
+  }
+
+  /* slider */
