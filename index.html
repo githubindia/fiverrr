@@ -111,7 +111,7 @@
 				</div>
 
 
-	<section class="menuheading">
+	<section >
 		<div class="container">
 		  <div class="ac">
 			 
@@ -223,42 +223,41 @@
 		</div>
 		</section>
 
-		<!---
-		<section class="menuheading">
-				<div class="container">
-			<div id="w">
-				
-					<div class="slider">
-						<ul class="slides">
-							<li class="slide">
-								<figure>
-								
-									<img src="img/1e.jpg" alt="dribbble witches">
-								</figure>
-							</li>
-							<li class="slide">
-								<figure>
-									
-									<img src="img/2e.jpg" alt="searing mountain illustration">
-								</figure>
-							</li>
-							<li class="slide">
-								<figure>
-									
-									<img src="img/4e.jpg" alt="taipei fireworks">
-								</figure>
-							</li>
-							<li class="slide">
-								<figure>
-									
-									<img src="img/6e.jpg" alt="coffee cup iphone newspaper">
-								</figure>
-						
-						</ul>
-					</div><!-- @end .slider -->
-				</div><!-- @end #w -->
-			</div>
-			</section>
+	<section >
+    <div class="container">
+  <div id="w">
+    
+      <div class="slider">
+        <ul class="slides">
+          <li class="slide">
+            <figure>
+            
+              <img src="images/project_image/1e.jpg" alt="dribbble witches">
+            </figure>
+          </li>
+          <li class="slide">
+            <figure>
+              
+              <img src="images/project_image/2e.jpg" alt="searing mountain illustration">
+            </figure>
+          </li>
+          <li class="slide">
+            <figure>
+              
+              <img src="images/project_image/4e.jpg" alt="taipei fireworks">
+            </figure>
+          </li>
+          <li class="slide">
+            <figure>
+              
+              <img src="images/project_image/6e.jpg" alt="coffee cup iphone newspaper">
+            </figure>
+        
+        </ul>
+      </div><!-- @end .slider -->
+    </div><!-- @end #w -->
+  </div>
+  </section>
 
 		<!-- Slider -->
 
@@ -343,6 +342,17 @@
 <script src="js/main.js"></script>
 <script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
 <script src="js/vendors/mc/main.js"></script>
+<script type="text/javascript" src="js/jquery.glide.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.slider').glide({
+			autoplay: 3500,
+			hoverpause: true, // set to false for nonstop rotate
+			arrowRightText: '&rarr;',
+			arrowLeftText: '&larr;'
+		});
+	});
+	</script>
 
 </body>
 </html>
